@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maths problems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="leftlogo">
+                <img src="patil logo.jpg" alt="logo">
+            </div>
+            <div class="collegename">
+                <h1>PATIL DEGREE COLLEGE FOR WOMENS</h1>
+            </div>
+            <div class="rightlogo">
+                <img src="nss logo.jpg" alt="logo">
+            </div>
+        </div>
+    </header>
+    <p><h1><center><u>GAUSS-JACOBI METHOD</u></center></h1></p>
+
+<p><h3>1. WORKING RULE:<br>
+   a) Isolate each variable in its equation:<br>
+      x_i = (b_i - Σ(a_ij * x_j)) / a_ii   (for j≠i)<br>
+   b) Start with initial guess (typically zeros)<br>
+   c) Compute new values using ONLY previous iteration values<br>
+   d) Stop when max|x_i^(k+1) - x_i^(k)| < tolerance<br><br><br>
+
+2. EXAMPLE SYSTEM:<br>
+   4x -  y +  z =  7   → x = (7 + y - z)/4<br>
+   4x - 8y +  z = -21  → y = (21 + 4x + z)/8<br>
+  -2x +  y + 5z =  15  → z = (15 + 2x - y)/5<br><br><br>
+
+3. ITERATION PROCESS:<br>
+   Initial guess: [0, 0, 0]<br><br><br>
+   
+   Iteration 1:<br>
+   x = (7 + 0 - 0)/4 = 1.75<br>
+   y = (21 + 0 + 0)/8 = 2.625<br>
+   z = (15 + 0 - 0)/5 = 3.0<br><br><br>
+
+   Iteration 2:<br>
+   x = (7 + 2.625 - 3)/4 = 1.65625<br>
+   y = (21 + 4*1.75 + 3)/8 = 2.9375<br>
+   z = (15 + 2*1.75 - 2.625)/5 = 3.175<br><br><br>
+
+   Iteration 3:<br>
+   x = (7 + 2.9375 - 3.175)/4 ≈ 1.9406<br>
+   y = (21 + 4*1.65625 + 3.175)/8 ≈ 3.0117<br>
+   z = (15 + 2*1.65625 - 2.9375)/5 ≈ 2.9922<br><br><br>
+
+4. CONVERGENCE<br>
+   The process continues until changes become negligible.<br>
+   Final solution converges to: x=2.0, y=4.0, z=3.0<br></p>
+
+<p>KEY NOTES:<br>
+• Always use values from PREVIOUS iteration<br>
+• System must be diagonally dominant for guaranteed convergence<br>
+• Typical tolerance: 1e-6<br>
+• Slower than Gauss-Seidel but easier to parallelize</h3><br>
+</p>
+<center><button><a href="elimination.html">BACK</a></button>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="jordan.html">NEXT</a></button></center>
+<footer class="footer">
+        <p><h3>Near KV Compound,Gangavathi Road</h3></p>
+    </footer> 
+</body>
+</html>

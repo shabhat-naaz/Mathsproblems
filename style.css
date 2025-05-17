@@ -1,0 +1,50 @@
+
+body{
+            background-image:url(q.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        
+        }
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    color: black;
+}
+header logo{
+    width: 100px;
+}
+header logo img{
+    width: 100px;
+    height: auto;
+}
+header.collegename{
+    text-align: center;
+    
+}
+.table{
+    margin-left: 20%;
+    padding: 5px;  
+    color: black;  
+}
+.table :hover{
+    text-decoration: dotted;
+}
+
+.footer {
+    background: black;
+    color: rgb(212, 205, 205);
+    text-align: center;
+    padding: 5px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    margin-top: 320px;
+    font-size: 14px;
+}

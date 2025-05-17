@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maths problems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="leftlogo">
+                <img src="patil logo.jpg" alt="logo">
+            </div>
+            <div class="collegename">
+                <h1>PATIL DEGREE COLLEGE FOR WOMENS</h1>
+            </div>
+            <div class="rightlogo">
+                <img src="nss logo.jpg" alt="logo">
+            </div>
+        </div>
+    </header>
+    <p><h1><center><u>Gauss-Seidel method</u></center></h1></p>
+
+
+ <p><h3>1. Rearrange each equation in the system to solve for one variable in terms of the others.<br>
+ 2. Assume initial guesses for all variables (usually x=0, y=0, z=0...).<br>
+ 3. Use the updated values immediately as soon as they are calculated.<br>
+ 4. Repeat the process for a fixed number of iterations or until values converge (difference is small enough).<br><br><br>
+
+# FORMULA FORMAT:<br><br>
+
+# For a system:<br>
+# a1*x + b1*y + c1*z = d1<br>
+# a2*x + b2*y + c2*z = d2<br>
+# a3*x + b3*y + c3*z = d3<br><br>
+
+# Rearranged:<br><br>
+# x = (d1 - b1*y - c1*z) / a1<br>
+# y = (d2 - a2*x - c2*z) / b2<br>
+# z = (d3 - a3*x - b3*y) / c3<br><br><br>
+
+# EXAMPLE:<br><br>
+# Solve the following system using Gauss-Seidel Method (3 iterations)<br>
+#     10x + y + z = 12<br>
+#     x + 10y + z = 13<br>
+#     x + y + 10z = 14<br><br>
+
+# STEP 1: Rearrange equations:<br>
+# x = (12 - y - z)/10<br>
+# y = (13 - x - z)/10<br>
+# z = (14 - x - y)/10<br><br>
+
+# STEP 2: Initial guess: x=0, y=0, z=0<br><br>
+
+# ITERATION 1:<br>
+# x = (12 - 0 - 0)/10 = 1.2<br>
+# y = (13 - 1.2 - 0)/10 = 1.18<br>
+# z = (14 - 1.2 - 1.18)/10 = 1.162<br><br>
+
+# ITERATION 2:<br>
+# x = (12 - 1.18 - 1.162)/10 = 0.9658<br>
+# y = (13 - 0.9658 - 1.162)/10 = 1.0876<br>
+# z = (14 - 0.9658 - 1.0876)/10 = 1.1947<br><br>
+
+# ITERATION 3:<br>
+# x = (12 - 1.0876 - 1.1947)/10 = 0.9718<br>
+# y = (13 - 0.9718 - 1.1947)/10 = 1.0834<br>
+# z = (14 - 0.9718 - 1.0834)/10 = 1.1945<br><br>
+
+# RESULT:<br>
+# After 3 iterations, approximate values are:<br>
+# x ≈ 0.9718<br>
+# y ≈ 1.0834<br>
+# z ≈ 1.1945<br><br>
+
+# These values will get closer to the exact solution with more iterations.<br><br>
+
+# NOTE:<br>
+# The method converges only if the system is diagonally dominant or satisfies certain conditions.<br>
+
+
+    </h3>
+    </p>
+    <center><button><a href="jordan.html">BACK</a></button>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="index.html">NEXT</a></button></center>
+    <footer class="footer">
+        <p><h3>Near KV Compound,Gangavathi Road</h3></p>
+    </footer>  
+</body>
+</html>

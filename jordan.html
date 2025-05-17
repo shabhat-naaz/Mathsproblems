@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="leftlogo">
+                <img src="patil logo.jpg" alt="logo">
+            </div>
+            <div class="collegename">
+                <h1>PATIL DEGREE COLLEGE FOR WOMENS</h1>
+            </div>
+            <div class="rightlogo">
+                <img src="nss logo.jpg" alt="logo">
+            </div>
+        </div>
+    </header>
+    <p><h1><center><u>Guass jordan method</u></center></h1></p>
+      <p><h3> Gauss-Jordan method is similar to the Gaussian elimination process, except that the entries both above and below each pivot are zeroed out.<br><br>
+After performing Gaussian elimination on a matrix, the result is in row echelon form, while the result after the Gauss-Jordan method is in reduced row echelon form.<br><br>
+A homogeneous linear system is always consistent because it always has at least the trivial solution.<br><br>
+If a homogeneous linear system has at least one nonpivot column (for example, when it has more variables than equations), then the system has an infinite number of solutions.<br><br>
+Linear systems having the same coefficient matrix can be solved simultaneously.<br><br></p>
+<p>
+ EXAMPLE SYSTEM:<br><br>
+   2x + y - z = 8<br>
+   -3x - y + 2z = -11<br>
+   -2x + y + 2z = -3<br><br>
+
+3. AUGMENTED MATRIX:<br><br>
+   [ 2  1 -1 |  8 ]<br>
+   [-3 -1  2 |-11 ]<br>
+   [-2  1  2 | -3 ]<br><br>
+
+4. STEP-BY-STEP TRANSFORMATION:<br><br>
+
+   STAGE 1: First pivot (R1)<br>
+   a) Make R1 leading coefficient = 1:<br>
+      R1 → R1/2<br>
+      [ 1  0.5 -0.5 | 4 ]<br>
+      [-3   -1    2 |-11]<br>
+      [-2    1    2 | -3]<br><br>
+
+   b) Eliminate other R1 entries:<br><br>
+      R2 → R2 + 3R1<br>
+      R3 → R3 + 2R1<br>
+      [ 1  0.5 -0.5 |  4 ]<br>
+      [ 0  0.5  0.5 |  1 ]<br>
+      [ 0  2.0  1.0 |  5 ]<br><br>
+
+   STAGE 2: Second pivot (R2)<br>
+   a) Make R2 leading coefficient = 1:<br>
+      R2 → R2/0.5<br>
+      [ 1  0.5 -0.5 | 4 ]<br>
+      [ 0    1    1 | 2 ]<br>
+      [ 0    2    1 | 5 ]<br><br>
+
+   b) Eliminate other R2 entries:<br>
+      R1 → R1 - 0.5R2<br>
+      R3 → R3 - 2R2<br>
+      [ 1  0 -1 | 3 ]<br>
+      [ 0  1  1 | 2 ]<br>
+      [ 0  0 -1 | 1 ]<br><br>
+
+   STAGE 3: Third pivot (R3)<br><br>
+   a) Make R3 leading coefficient = 1:<br><br>
+      R3 → R3/-1<br>
+      [ 1  0 -1 | 3 ]<br>
+      [ 0  1  1 | 2 ]<br>
+      [ 0  0  1 |-1 ]<br><br>
+
+   b) Eliminate other R3 entries:<br><br>
+      R1 → R1 + R3<br>
+      R2 → R2 - R3<br>
+      [ 1 0 0 | 2 ]<br>
+      [ 0 1 0 | 3 ]<br>
+      [ 0 0 1 |-1 ]<br><br>
+
+5. FINAL SOLUTION:<br><br>
+   x = 2,<br> y = 3,<br> z = -1<br><br>
+
+KEY DIFFERENCES FROM GAUSSIAN ELIMINATION:<br><br>
+• Continues elimination above AND below pivots<br>
+• Produces identity matrix directly<br>
+• No back substitution needed<br>
+• More computationally intensive<br>
+</h3>
+</p>
+<center><button><a href="jocobi.html">BACK</a></button>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="seidal.html">NEXT</a></button></center>
+<footer class="footer">
+        <p><h3>Near KV Compound,Gangavathi Road</h3></p>
+    </footer>  
+
+
+
+</body>
+</html>

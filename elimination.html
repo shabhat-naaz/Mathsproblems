@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maths problems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="leftlogo">
+                <img src="patil logo.jpg" alt="logo">
+            </div>
+            <div class="collegename">
+                <h1>PATIL DEGREE COLLEGE FOR WOMENS</h1>
+            </div>
+            <div class="rightlogo">
+                <img src="nss logo.jpg" alt="logo">
+            </div>
+        </div>
+    </header>
+    <p><h1><center><u>Guass elimination method</u></center></h1></p>
+  <p><h3>1. Form Augmented Matrix:</p>
+   <p>[a11 a12 ... a1n | b1]<br>
+   [a21 a22 ... a2n | b2]<br>
+   [... ... ... ... | ..]<br>
+   [am1 am2 ... amn | bm]<br>
+   </p>                      
+<p>2. Forward Elimination (REF):<br>
+   - Goal: Upper triangular matrix with leading 1's (pivots).<br><br>
+   - Operations:<br>
+     - Swap rows (R_i ↔ R_j) if pivot is zero.<br>
+     - Scale rows (R_i → k*R_i) to make pivots = 1.<br>
+     - Eliminate below pivots (R_i → R_i - k*R_j).<br>
+     </p>
+
+<p>3. Back Substitution:<br>
+   - Solve from bottom to top:<br>
+     x_n = b_n / a_nn<br>
+     x_i = (b_i - Σ(a_ij * x_j)) / a_ii (for j = i+1 to n).<br>
+     </p>
+
+<p>4. (Optional) RREF:<br>
+   - Eliminate above pivots for diagonal form.<br>
+   </p>
+
+<p>5. Consistency Check:<br>
+   - If row = [0 ... 0 | c] (c ≠ 0): NO SOLUTION.<br>
+   - If fewer pivots than variables: INFINITE SOLUTIONS (free variables).<br>
+   </p>
+
+<p>Example System:<br>
+   2x + y - z = 8<br>
+  -3x - y + 2z = -11<br>
+  -2x + y + 2z = -3<br><br>
+
+Augmented Matrix:<br>
+  [ 2   1  -1  |  8 ]<br>
+  [-3  -1   2  | -11]<br>
+  [-2   1   2  | -3 ]<br><br>
+
+REF:<br>
+  [1  0.5 -0.5 |  4 ]<br>
+  [0   1   1   |  1 ]<br>
+  [0   0   1   | -1 ]<br><br>
+
+Solution: x=2, y=2, z=-1</h3></p>
+<center><button><a href="index.html">BACK</a></button>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="jocobi.html">NEXT</a></button></center>
+<footer class="footer">
+        <p><h3>Near KV Compound,Gangavathi Road</h3></p>
+    </footer>   
+</body>
+</html>
